@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      border: 0;
+      overflow-x: hidden;
+      /* background-color: rgb(247, 247, 247); */
+    }
+
+    /* 最小尺寸 ----------------------------------------------*/
+    .container-card {
+      padding: 1rem;
+    }
+
+    .row-cols {
+      width: 100%;
+    }
+
+    .container-form {
+      margin: 1rem;
+    }
+
+    .col-md-6 g-4 .btn {
+      color: black;
+      border-color: #6c757d;
+    }
+
+    .container-form .btn {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .bnt1 {
+      padding: 0;
+      margin: 0 2rem 0 2rem;
+    }
+
+
+    /* 斷點 768 px 大尺寸-----------------------------------------*/
+    @media (min-width: 768px) {
+      .container-card {
+        padding: 5rem;
+      }
+
+      .row-cols {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .rc2 {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- 固定title -------------------------------------------->
+  <nav class="navbar navbar-expand-md navbar-dark bg-brown fixed-top opacity-95">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">泰山咖啡莊園</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#yunz">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="yunz">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#section04">菜單餐點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section04">周邊景點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section04">莊園位置</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section04">聯絡我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section04">咖啡故事</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 輪播圖 ------------------------------------------------>
+  <div id="yunz2" class="carousel slide mb-3" data-bs-ride="carousel">
+    <div class="carousel-indicators" style="position: absolute; top: 0.1rem;">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1920/1080/?random=1" class="d-block w-100" >
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1920/1080/?random=2" class="d-block w-100" >
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1920/1080/?random=3" class="d-block w-100" >
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- cadr 卡片*3 ------------------------------------------>
+  <div class="container-card mb-3">
+    <div class="card-group">
+      <div class="card">
+        <img src="https://picsum.photos/1920/1080/?random=4" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">地方身邊依法為了依。</h5>
+          <p class="card-text fs-7">教學模糊財政你還符合感到種種企業，足球家電缺乏有點絶不，解壓密碼心情戰略靜靜土地尺寸個性才是，感興趣就要思維施工，根本大陸一面，怎麼辦常常，協會平均不少，鮮花。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/1920/1080/?random=5" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">地方身邊依法為了依。</h5>
+          <p class="card-text fs-7">教學模糊財政你還符合感到種種企業，足球家電缺乏有點絶不，解壓密碼心情戰略靜靜土地尺寸個性才是，感興趣就要思維施工，根本大陸一面，怎麼辦常常，協會平均不少，鮮花。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/1920/1080/?random=6" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">地方身邊依法為了依。</h5>
+          <p class="card-text fs-7">教學模糊財政你還符合感到種種企業，足球家電缺乏有點絶不，解壓密碼心情戰略靜靜土地尺寸個性才是，感興趣就要思維施工，根本大陸一面，怎麼辦常常，協會平均不少，鮮花。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 圖片+文字+圖片+文字 -->
+  <div class="container-md mb-3">
+
+    <div class="row-cols">
+      <div class="col">
+        <img src="https://picsum.photos/1920/1080/?random=7" class="card-img-top ">
+      </div>
+      <div class="col">
+        <div class="card-body text-center ">
+          <h5 class="card-title fs-5">Coffee Shop</h5>
+          <p class="card-text">現代最重要讀者漸漸如同位元運行新技術附件不久玻璃，灌水無關產權電影死了，可能另外轉貼此刻好激動明顯說了，變化學術中文打造電力誘惑小組元素法人，投資更好階段穩定都沒說法平方米顧問要有天空，引導笑話氣息程度廠家你們運行平台，谷歌部隊即將改造貢。</p>
+          <a href="#" class="btn btn-green">VIEW COLLECTION</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-cols rc2">
+      <div class="col">
+        <img src="https://picsum.photos/1920/1080/?random=8" class="card-img-top ">
+      </div>
+      <div class="col">
+        <div class="card-body text-center ">
+          <h5 class="card-title fs-5">Coffee Shop</h5>
+          <p class="card-text">現代最重要讀者漸漸如同位元運行新技術附件不久玻璃，灌水無關產權電影死了，可能另外轉貼此刻好激動明顯說了，變化學術中文打造電力誘惑小組元素法人，投資更好階段穩定都沒說法平方米顧問要有天空，引導笑話氣息程度廠家你們運行平台，谷歌部隊即將改造貢。</p>
+          <a href="#" class="btn btn-green">VIEW COLLECTION</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 地圖 -->
+  <div class="container-map mb-3">
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.702009059908!2d121.41729491544689!3d25.044184944036015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQz5paw5YyX5biC5rOw5bGx5Y2A5rOw5bGx6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1653352150726!5m2!1szh-TW!2stw"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+  </div>
+
+  <!-- 表單 -->
+  <div class="container-form mb-3">
+
+    <div class="text-center">
+      <h1>聯絡我們</h1>
+      <h2>泰山咖啡莊園，傳承熱情 coding 精神</h2>
+      <p>任何服務問題或建議，歡迎您透過客服表單告知我們，謝謝！</p>
+    </div>
+
+    <form class="row">
+      <div class="col-md-6 g-4">
+        <label for="inputName" class="form-label">姓名</label>
+        <input type="text" class="form-control" id="inputName">
+        
+        <div class="fm">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="male">
+            <label class="form-check-label" for="male">
+              先生
+            </label>
+          </div>
+  
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="female" checked>
+            <label class="form-check-label" for="female">
+              女士
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-6 g-4">
+        <label for="inputTel" class="form-label">電話</label>
+        <input type="text" class="form-control" id="inputTel">
+      </div>
+
+    </form>
+
+    <form class="row">
+      <div class="col-md-6 g-4">
+        <label for="inputMail" class="form-label">電子信箱</label>
+        <input type="email" class="form-control" id="inputMail">
+      </div>
+
+      <div class="col-md-6 g-4">
+        <label for="inputQ" class="form-label">問題類型</label>
+        <!-- <input type="text" class="form-control" id="inputQ"> -->
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            餐飲建議
+          </a>
+          
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">用餐環境</a></li>
+            <li><a class="dropdown-item" href="#">人員服務</a></li>
+            <li><a class="dropdown-item" href="#">其他</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+    </form>
+
+
+    <form class="row">
+      <div class="col-md-12 mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">意見需求</label>
+        <textarea class="form-control" id="inputNeeds" rows="3"></textarea>
+      </div>
+    </form>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        訂閱泰山莊園最新資訊
+      </label>
+    </div>
+
+    <button type="button" class="btn btn-secondary align-self-center">送出</button>
+
+
+  </div>
+
+  <!-- fooerert -->
+  <div class="container-foot">
+    
+  </div>
+  
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
